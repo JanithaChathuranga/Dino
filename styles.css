@@ -39,3 +39,15 @@ body {
     background-repeat: repeat-x;
     animation: scrollBackground 10s linear infinite;
 }
+
+/* CSS for scrolling background */
+@keyframes scrollBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -800px 0; }
+}
+
+body {
+    background-image: url('your-background-image.jpg');
+    background-repeat: repeat-x;
+    animation: scrollBackground 10s linear infinite;
+}
