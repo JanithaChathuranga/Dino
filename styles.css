@@ -1,0 +1,41 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#gameCanvas {
+    background-color: #e4e4e4;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+
+#gameOver {
+    font-size: 24px;
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Add this to your styles.css to animate the background */
+@keyframes scrollBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -800px 0; }
+}
+
+body {
+    background-image: url('your-background-image.jpg');
+    background-repeat: repeat-x;
+    animation: scrollBackground 10s linear infinite;
+}
